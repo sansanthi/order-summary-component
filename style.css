@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background: hsl(225, 100%, 94%);
+    color: hsl(224, 23%, 55%);  
+    
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.order-summary {
+    max-width: 20rem;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.hero-img {
+    width: 100%;
+}
+.music-img {
+    /* width: 20rem; */
+    max-width: 100%;
+    display: block;
+}
+
+.order-body {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.heading {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 1rem;
+}
+.description-box {
+    line-height: 1.8;
+}
+.plan {
+    background: hsl(225, 100%, 98%);
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.plan-details {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+.music-icon {
+    display: block;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+}
+.plan-title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+}
+.change:hover {
+    text-decoration: none;
+}
+.btn {
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.btn:hover {
+    background: rgba(56, 41, 224, 0.85);
+    cursor: pointer;
+}
+.cancel-order {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .container {
+        height: 100%;
+    }
+    .container {
+        background: url(images/pattern-background-desktop.svg);
+    }
+}
